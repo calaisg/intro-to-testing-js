@@ -166,7 +166,7 @@ describe('testDrive', function() {
     });
 
     it('should return a number when called', function() {
-        expect(typeof testDrive()).toBe("Number");
+        expect(typeof testDrive()).toBe("number");
     });
 
     it('should return the number 5 when 2, 3 executed', function() {
@@ -186,15 +186,15 @@ describe('testDrive', function() {
     });
 
     it('should return NaN when "banana", "split" executed', function() {
-        expect(testDrive("banana", "split")).toBe(NaN);
+        expect(testDrive("banana", "split")).toBeNaN();
     });
 
     it('should return NaN when 2, "apples" executed', function() {
-        expect(testDrive(2, "apples")).toBe(NaN);
+        expect(testDrive(2, "apples")).toBeNaN();
     });
 
     it('should return Nan  when executed', function() {
-        expect(testDrive()).toBe(NaN);
+        expect(testDrive()).toBeNaN();
     });
 
 });
