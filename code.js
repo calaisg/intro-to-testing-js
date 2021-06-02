@@ -45,3 +45,14 @@ function isVowel(letter)
     else {return false}
 }
 
+
+//COME BACK TO
+function testDrive(numb_one, numb_two)
+{
+    if (isNaN(numb_one) === true || isNaN(numb_two) === true)
+    {
+        return NaN;
+    }
+
+   else {return (Number(numb_one) + Number(numb_two))};
+}

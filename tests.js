@@ -160,3 +160,42 @@ describe('isVowel', function()
     });
 });
 
+describe('testDrive', function() {
+    it('should be a defined function', function() {
+        expect(typeof testDrive ).toBe('function');
+    });
+
+    it('should return a number when called', function() {
+        expect(typeof testDrive()).toBe("Number");
+    });
+
+    it('should return the number 5 when 2, 3 executed', function() {
+        expect(testDrive(2, 3)).toBe(5);
+    });
+
+    it('should return the number -12 when -3, -9 executed', function() {
+        expect(testDrive(-3, -9)).toBe(-12);
+    });
+
+    it('should return the number -11 when "5", 6 executed', function() {
+        expect(testDrive("5", 6)).toBe(11);
+    });
+
+    it('should return the number 6 when "-4", "10" executed', function() {
+        expect(testDrive("-4", "10")).toBe(6);
+    });
+
+    it('should return NaN when "banana", "split" executed', function() {
+        expect(testDrive("banana", "split")).toBe(NaN);
+    });
+
+    it('should return NaN when 2, "apples" executed', function() {
+        expect(testDrive(2, "apples")).toBe(NaN);
+    });
+
+    it('should return Nan  when executed', function() {
+        expect(testDrive()).toBe(NaN);
+    });
+
+});
+
