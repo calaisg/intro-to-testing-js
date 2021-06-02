@@ -28,3 +28,20 @@ function isEven(number)
     else {return false}
 }
 
+function isVowel(letter)
+{
+    if (isNaN(letter) === false || letter === true || letter === false || letter === undefined)
+    {
+        return false;
+    }
+
+    letter = letter.toLowerCase();
+
+    if(letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" || letter === "y")
+    {
+        return true;
+    }
+
+    else {return false}
+}
+
