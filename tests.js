@@ -71,3 +71,51 @@ describe('isFive', function()
         expect(isFive("6")).toBe(false);
     });
 });
+
+describe('isEven', function()
+{
+    it('should be a defined function', function ()
+    {
+        expect(typeof isEven).toBe('function');
+    });
+
+    it('should return a boolean when called', function() {
+        expect(typeof isEven()).toBe("boolean");
+    });
+
+    it('should return the boolean "true" when 2 executed', function() {
+        expect(isEven(2)).toBe(true);
+    });
+
+    it('should return the boolean "true" when -4 executed', function() {
+        expect(isEven(-4)).toBe(true);
+    });
+
+    it('should return the boolean "false" when 3  executed', function() {
+        expect(isEven(3)).toBe(false);
+    });
+
+    it('should return the boolean "false" when "banana"  executed', function() {
+        expect(isEven("banana")).toBe(false);
+    });
+
+    it('should return the boolean "true" when "8"  executed', function() {
+        expect(isEven("8")).toBe(true);
+    });
+
+    it('should return the boolean "false" when infinity  executed', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+
+    it('should return the boolean "false" when true  executed', function() {
+        expect(isEven(true)).toBe(false);
+    });
+
+    it('should return the boolean "false" when false executed', function() {
+        expect(isEven(false)).toBe(false);
+    });
+
+
+
+
+});

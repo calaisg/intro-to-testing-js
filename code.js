@@ -21,3 +21,10 @@ function isFive(number)
     else {return false}
 }
 
+function isEven(number)
+{
+    if (typeof number === "boolean") {return false}
+    if(number % 2 === 0) { return true}
+    else {return false}
+}
+
