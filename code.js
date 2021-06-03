@@ -54,5 +54,5 @@ function testDrive(numb_one, numb_two)
         return NaN;
     }
 
-   else {return (Number(numb_one) + Number(numb_two))};
+   else {return +numb_one + +numb_two};
 }
