@@ -45,7 +45,6 @@ describe('sayHello', function()
         expect(sayHello(false)).toBe("Hello, World!")
     });
 
-
 });
 
 describe('isFive', function()
